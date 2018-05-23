@@ -1,0 +1,24 @@
+body {
+    font-family: 'Tajawal', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.nav-link {
+    color: #124a4f;
+    font-family: 'Catamaran', sans-serif;
+}
+
+.block-title {
+    margin-bottom: 0;
+}
+
+.date {
+    color: $dark-green;
+    font-family: 'Catamaran', sans-serif;
+    transition: all 0.3s ease-in-out;
+}

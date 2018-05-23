@@ -1,0 +1,243 @@
+.gutted {
+    padding-left: $gutter-mobile;
+    padding-right: $gutter-mobile;
+    @include tablet-min() {
+        padding-left: $gutter-desktop;
+        padding-right: $gutter-desktop;
+    }
+    @include small-desktop-min() {
+        padding-left: $gutter-desktop;
+        padding-right: $gutter-desktop;
+    }
+    @include wide-desktop-min() {
+        padding-left: $gutter-desktop;
+        padding-right: $gutter-desktop;
+    }
+}
+
+.fix-fit {
+    display: inline-block;
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding-left: 0;
+}
+
+.pull-right {
+    float: right;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+* html .clearfix {
+    zoom: 1;
+}
+
+
+/* IE6 */
+
+*:first-child+html .clearfix {
+    zoom: 1;
+}
+
+
+/* IE7 */
+
+.mobile-only {
+    @media screen and (min-width: $break-mobile-max) {
+        display: none;
+    }
+}
+
+.mobile-hide {
+    @media screen and (max-width: $break-mobile-max) {
+        display: none;
+    }
+}
+
+.tablet-only {
+    @media screen and (min-width: $break-tablet-max) {
+        display: none;
+    }
+}
+
+.tablet-hide {
+    @media screen and (max-width: $break-tablet-max) {
+        display: none!important;
+    }
+}
+
+.desktop-hide {
+    @media screen and (min-width: $break-tablet-max) {
+        display: none!important;
+    }
+}
+
+.text-right-small-desktop {
+    @media screen and (min-width: $break-tablet-max) {
+        text-align: right;
+    }
+}
+
+.spacer-mobile-tablet {
+    @media screen and (max-width: $break-mobile-max) {
+        margin-bottom: 10px !important;
+    }
+    @media screen and (max-width: $break-tablet-max) {
+        margin-bottom: 15px !important;
+    }
+}
+
+.spacer-small-desktop {
+    @media screen and (max-width: $break-tablet-max) {
+        margin-bottom: 10px !important;
+    }
+}
+
+.nomargin {
+    margin: 0;
+}
+
+.nopadding {
+    padding: 0;
+}
+
+.bounce {
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+}
+
+.spacer-xx-small {
+    margin-bottom: 5px;
+}
+
+.spacer-x-small {
+    margin-bottom: 10px;
+}
+
+.spacer-small {
+    margin-bottom: 20px;
+}
+
+.spacer-medium {
+    margin-bottom: 30px;
+}
+
+.spacer-medium__top {
+    margin-top: 30px
+}
+
+.spacer-large {
+    margin-bottom: 40px;
+}
+
+.spacer-x-large {
+    margin-bottom: 50px;
+}
+
+.spacer-xx-large {
+    margin-bottom: 60px;
+}
+
+.spacer-mega {
+    margin-bottom: 80px;
+}
+
+.spacer-x-mega {
+    margin-bottom: 100px;
+}
+
+.spacer-xx-mega {
+    margin-bottom: 130px;
+}
+
+.spacer-xx-mega-top {
+    margin-top: 30px;
+    @include tablet-min() {
+        margin-top: 90px;
+    }
+    @media screen and (min-width: 1280px) {
+        margin-top: 130px;
+    }
+}
+
+.spacer-small-responsive {
+    margin-bottom: 10px;
+    @include tablet-min() {
+        margin-bottom: 15px;
+    }
+    @include small-desktop-min() {
+        margin-bottom: 20px;
+    }
+}
+
+.spacer-medium-responsive {
+    margin-bottom: 10px;
+    @include tablet-min() {
+        margin-bottom: 25px;
+    }
+    @include small-desktop-min() {
+        margin-bottom: 30px;
+    }
+}
+
+.spacer-large-responsive {
+    margin-bottom: 20px;
+    @include tablet-min() {
+        margin-bottom: 30px;
+    }
+    @include small-desktop-min() {
+        margin-bottom: 40px;
+    }
+}
+
+.spacer-x-large-responsive {
+    margin-bottom: 30px;
+    @include tablet-min() {
+        margin-bottom: 40px;
+    }
+}
+
+.spacer-xx-large-responsive {
+    margin-bottom: 40px;
+    @include tablet-min() {
+        margin-bottom: 50px;
+    }
+    @include small-desktop-min() {
+        margin-bottom: 60px;
+    }
+}
+
+.spacer-mega-responsive {
+    margin-bottom: 40px;
+    @include small-desktop-min() {
+        margin-bottom: 70px;
+    }
+}
+
+.spacer-x-mega-responsive {
+    margin-bottom: 60px;
+    @include tablet-min() {
+        margin-bottom: 80px;
+    }
+    @include small-desktop-min() {
+        margin-bottom: 100px;
+    }
+}
+
+.spacer-xx-mega-responsive {
+    margin-bottom: 80px;
+    @include tablet-min() {
+        margin-bottom: 110px;
+    }
+    @include small-desktop-min() {
+        margin-bottom: 130px;
+    }
+}

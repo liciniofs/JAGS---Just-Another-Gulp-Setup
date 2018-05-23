@@ -1,0 +1,96 @@
+.rte-content {
+    p {
+        @extend .spacer-small;
+    }
+    p img {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    p.centi {
+        color: $taborda-blue;
+        font-weight: 700;
+    }
+    p.negative-margin {
+        margin-top: -15%;
+    }
+    /*styles to use on the backoffice
+
+		span, p {
+				font-style: normal;
+				line-height: 1.42;
+				font-family: "Raleway-Regular", Helvetica, Arial, sans-serif;
+				font-size: $font-regular-size--mobile;
+				color: $taborda-gray-dark;
+			}
+		}
+		p {
+			@extend .spacer-small;
+		}
+
+		p img {
+			width: 100%;
+			margin-bottom: 20px;
+		}
+
+		span, p{
+			&.centi {
+				color: $taborda-blue;
+				font-weight: 700;
+				font-family: $font-raleway;
+				font-size: $font-centi-milli-size--mobile;
+			}
+		}
+
+		span, p{
+			&.gamma900 {
+				font-family: $font-museo-900;
+				font-size: $font-gamma-size--mobile;
+				color: $taborda-purple-dark;
+				line-height: 1.1;
+			}
+		}
+
+		span, p{
+			&.zeta{
+				font-family: $font-raleway;
+				font-size: $font-zeta-eta-size--mobile;
+				color: $taborda-gray-dark;
+			}
+		}
+
+		span, p{
+			&.epsilon {
+				font-family: $font-raleway;
+				font-size: $font-epsilon-size--mobile;
+				color: $taborda-purple;
+			}
+		}
+
+		span, p{
+			&.milli{
+				font-family: $font-raleway;
+				font-size: $font-centi-milli-size--mobile;
+			}
+		}
+
+		span, p{
+			&.eta{
+				font-family: $font-raleway-bold;
+				font-size: $font-zeta-eta-size--mobile;
+				color: $taborda-gray-dark;
+			}
+		}
+
+	*/
+}
+
+.context-private {
+    .rte-content {
+        p.centi {
+            color: #000;
+        }
+        p.epsilon {
+            color: #000;
+        }
+    }
+}

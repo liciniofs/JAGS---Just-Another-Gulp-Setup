@@ -1,0 +1,114 @@
+.icon-card:before {
+  content: "\e919";
+}
+.icon-pay:before {
+  content: "\e91a";
+}
+.icon-receive:before {
+  content: "\e91b";
+}
+.icon-double-up:before {
+  content: "\e916";
+}
+.icon-left:before {
+  content: "\e917";
+}
+.icon-up:before {
+  content: "\e918";
+}
+.icon-phone-circle:before {
+  content: "\e900";
+}
+.icon-phone:before {
+  content: "\e901";
+}
+.icon-info:before {
+  content: "\e902";
+}
+.icon-location:before {
+  content: "\e903";
+}
+.icon-magnifier:before {
+  content: "\e904";
+}
+.icon-marker:before {
+  content: "\e905";
+}
+.icon-check:before {
+  content: "\e906";
+}
+.icon-cross:before {
+  content: "\e907";
+}
+.icon-collapsed:before {
+  content: "\e908";
+}
+.icon-expanded:before {
+  content: "\e909";
+}
+.icon-double-down:before {
+  content: "\e90a";
+}
+.icon-double-right:before {
+  content: "\e90b";
+}
+.icon-down:before {
+  content: "\e90c";
+}
+.icon-right2:before {
+  content: "\e90d";
+}
+.icon-column-marker:before {
+  content: "\e90e";
+}
+.icon-download:before {
+  content: "\e90f";
+}
+.icon-external:before {
+  content: "\e910";
+}
+.icon-circle:before {
+  content: "\e911";
+}
+.icon-facebook:before {
+  content: "\e912";
+}
+.icon-googleplus:before {
+  content: "\e913";
+}
+.icon-linkedin:before {
+  content: "\e914";
+}
+.icon-twitter:before {
+  content: "\e915";
+}
+.icon-leasing:before {
+  content: "\e924";
+}
+.icon-insurance:before {
+  content: "\e922";
+}
+.icon-transfers:before {
+  content: "\e923";
+}
+.icon-filters:before {
+  content: "\e921";
+}
+.icon-target:before {
+  content: "\e920";
+}
+.icon-credit-cards:before {
+  content: "\e91d";
+}
+.icon-screens:before {
+  content: "\e91f";
+}
+.icon-clock:before {
+  content: "\e91c";
+}
+.icon-money:before {
+  content: "\e91e";
+}
+.icon-burguer:before {
+  content: "\e3c7";
+}

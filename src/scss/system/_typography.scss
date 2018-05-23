@@ -1,0 +1,251 @@
+body {
+    font-style: normal;
+    line-height: 1.42;
+    font-size: $font-regular-size--mobile;
+    color: $taborda-gray-dark;
+    @include tablet-min() {
+        font-size: $font-regular-size--tablet;
+    }
+    @include small-desktop-min() {
+        font-size: $font-regular-size--tablet;
+    }
+    @include wide-desktop-min() {
+        font-size: $font-regular-size--desktop;
+    }
+}
+
+a {
+    color: $taborda-gray-darker;
+    text-decoration: none;
+    &:hover,
+    &:focus {
+        color: $taborda-blue;
+        text-decoration: underline;
+    }
+}
+
+.context-private {
+    a {
+        &:hover,
+        &:focus {
+            color: $taborda-gold-dark;
+        }
+    }
+}
+
+.mega {
+    font-family: $font-raleway-light;
+    font-size: $font-mega-size--mobile;
+    color: $taborda-gray;
+    line-height: 1;
+    text-transform: uppercase;
+    @include tablet-min() {
+        font-size: $font-mega-size--tablet;
+    }
+    @include small-desktop-min() {
+        font-size: $font-mega-size--desktop;
+    }
+    @include wide-desktop-min() {
+        font-size: $font-mega-size--wide-desktop;
+    }
+}
+
+h1,
+.alpha {
+    font-family: $font-museo-900;
+    font-size: $font-alpha-size--mobile;
+    color: $taborda-blue;
+    line-height: 1;
+    @media (min-width: $break-mobile-max) {
+        font-size: $font-alpha-size--tablet;
+    }
+    @media (min-width: $break-tablet-max) {
+        font-size: $font-alpha-size--desktop;
+    }
+    @include wide-desktop-min() {
+        font-size: $font-alpha-size--wide-desktop;
+    }
+}
+
+h2,
+.beta {
+    font-family: $font-museo-900;
+    font-size: $font-beta-size--mobile;
+    color: $taborda-purple-dark;
+    line-height: 1;
+    @media (min-width: $break-mobile-max) {
+        font-size: $font-beta-size--tablet;
+    }
+    @media (min-width: $break-tablet-max) {
+        font-size: $font-beta-size--desktop;
+    }
+    @include wide-desktop-min() {
+        font-size: $font-beta-size--wide-desktop;
+    }
+}
+
+h3,
+.gamma900 {
+    font-family: $font-museo-900;
+    font-size: $font-gamma-size--mobile;
+    color: $taborda-purple-dark;
+    line-height: 1.1;
+    @media (min-width: $break-mobile-max) {
+        font-size: $font-gamma-size--tablet;
+    }
+    @media (min-width: $break-tablet-max) {
+        font-size: $font-gamma-size--desktop;
+    }
+}
+
+.gamma700 {
+    font-family: $font-museo-700;
+    font-size: $font-gamma-size--mobile;
+    color: $taborda-purple-dark;
+    line-height: 1.1;
+    @media (min-width: $break-mobile-max) {
+        font-size: $font-gamma-size--tablet;
+    }
+    @media (min-width: $break-tablet-max) {
+        font-size: $font-gamma-size--desktop;
+    }
+}
+
+h4,
+.delta {
+    font-family: $font-museo-700;
+    font-size: $font-delta-size--mobile;
+    color: $taborda-blue;
+    @media (min-width: $break-mobile-max) {
+        font-size: $font-delta-size--tablet;
+    }
+    @media (min-width: $break-tablet-max) {
+        font-size: $font-delta-size--desktop;
+    }
+}
+
+h5,
+.epsilon {
+    font-family: $font-raleway;
+    font-size: $font-epsilon-size--mobile;
+    color: $taborda-purple;
+    @media (min-width: $break-mobile-max) {
+        font-size: $font-epsilon-size--tablet;
+    }
+    @media (min-width: $break-tablet-max) {
+        font-size: $font-epsilon-size--desktop;
+    }
+    &.grey {
+        color: $taborda-gray-dark;
+    }
+}
+
+h6,
+.zeta {
+    font-family: $font-raleway;
+    font-size: $font-zeta-eta-size--mobile;
+    color: $taborda-gray-dark;
+    @media (min-width: $break-mobile-max) {
+        font-size: $font-zeta-eta-size--tablet;
+    }
+    @media (min-width: $break-tablet-max) {
+        font-size: $font-zeta-eta-size--desktop;
+    }
+}
+
+.eta {
+    font-family: $font-raleway-bold;
+    font-size: $font-zeta-eta-size--mobile;
+    color: $taborda-gray-dark;
+    @media (min-width: $break-mobile-max) {
+        font-size: $font-zeta-eta-size--tablet;
+    }
+    @media (min-width: $break-tablet-max) {
+        font-size: $font-zeta-eta-size--desktop;
+    }
+}
+
+.centi {
+    font-family: $font-raleway;
+    font-size: $font-centi-milli-size--mobile;
+    color: $taborda-blue;
+    @media (min-width: $break-mobile-max) {
+        font-size: $font-centi-milli-size--tablet;
+    }
+    @media (min-width: $break-tablet-max) {
+        font-size: $font-centi-milli-size--desktop;
+    }
+}
+
+.milli,
+%milli {
+    font-family: $font-raleway;
+    font-size: $font-centi-milli-size--mobile;
+    @media (min-width: $break-mobile-max) {
+        font-size: $font-centi-milli-size--tablet;
+    }
+    @media (min-width: $break-tablet-max) {
+        font-size: $font-centi-milli-size--desktop;
+    }
+}
+
+.white {
+    color: $taborda-white !important;
+}
+
+.blue {
+    color: $taborda-blue !important;
+}
+.purple {
+    color: $taborda-purple  !important;
+}
+
+.black {
+    color: $taborda-black  !important;
+}
+.context-private {
+    .gold {
+        color: $taborda-gold !important;
+    }
+}
+
+
+.link-color {
+    color: $taborda-blue;
+    a {
+        color: $taborda-blue;
+    }
+}
+
+.context-private {
+    .blue {
+        color: $taborda-black;
+    }
+    .link-color {
+        color: $taborda-gray-darker;
+        a {
+            color: $taborda-gray-darker;
+        }
+    }
+}
+
+
+.context-private {
+    .purple {
+        color: $taborda-gold-dark;
+    }
+}
+
+.purple-dark {
+    color: $taborda-purple-dark;
+}
+
+.context-private {
+    .purple-dark {
+        color: $taborda-gold-dark;
+    }
+}
+
+.strong {
+    font-weight: 700;
+}

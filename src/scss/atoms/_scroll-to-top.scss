@@ -1,0 +1,27 @@
+.scroll-to-top {
+    background-color: $dark-green;
+    border-radius: 50%;
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    height: 50px;
+    right: 20px;
+    padding: 10px 14px;
+    position: fixed;
+    transition: all 0.3s ease-in-out;
+    width: 50px;
+    z-index: 999;
+    
+    .fa {
+        font-size: 1.5em;
+        color: white;
+    }
+    
+    &:hover {
+        background-color: $light-green;
+        
+        .fa {
+            // color: white;
+        }
+    }
+}

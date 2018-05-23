@@ -1,0 +1,58 @@
+// vendor
+// @import "bower_components/bootstrap/scss/_functions";
+// @import "bower_components/bootstrap/scss/_variables";
+// @import "bower_components/bootstrap/scss/_mixins";
+//@import "bower_components/bootstrap/scss/_grid";
+
+@import "bower_components/bootstrap/scss/bootstrap";
+
+// @import "bower_compomponents/bootstrap/_animate";
+// @import "bower_compomponents/bootstrap/_styles";
+
+// Esternal
+@import url('https://fonts.googleapis.com/css?family=Catamaran:900');
+@import url('https://fonts.googleapis.com/css?family=Tajawal');
+
+// Framework
+@import "system/_variables";
+@import "system/_animation";
+@import "system/_mixins";
+@import "system/_utils";
+// @import "system/_layout";
+// @import "system/_typography";
+// @import "system/_rte";
+
+// Global css
+@import 'global/_header';
+@import 'global/_backgrounds';
+
+// Atoms
+@import 'atoms/_alertas';
+@import 'atoms/_buttons';
+@import 'atoms/_effects';
+@import 'atoms/_img';
+@import 'atoms/_lists';
+@import 'atoms/_navigation-items';
+@import 'atoms/_scroll-to-top';
+@import 'atoms/_social-icons';
+@import 'atoms/_typography';
+
+// Molecules
+@import 'molecules/_agenda';
+@import 'molecules/_calendar';
+@import 'molecules/_cookie-consent';
+@import 'molecules/_hero';
+@import 'molecules/_home-form';
+@import 'molecules/_leave-message';
+@import 'molecules/_transparencia-block';
+
+// Organisms
+@import 'organisms/_acessos-rapidos';
+@import 'organisms/_alertas';
+@import 'organisms/_container';
+@import 'organisms/_footer';
+@import 'organisms/_footer-bottom';
+// @import 'organisms/_footer-top';
+@import 'organisms/_marquee';
+@import 'organisms/_mensagem';
+@import 'organisms/_noticias';

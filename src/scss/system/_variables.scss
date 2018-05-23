@@ -1,0 +1,69 @@
+$yellow: #f7d85d;
+$light-green: #63A590;            
+$dark-green: #124a4f;            
+$social-facebook: #507cbe;
+$social-linkedin: #1e88c9;
+$social-googleplus: #de4f42;
+//fonts
+$main-font : 'Catamaran', sans-serif;
+$secondary-font : 'Tajawal', sans-serif;
+$font-raleway: 'Roboto';
+$font-raleway-light: 'Roboto';
+$font-raleway-semi-bold: 'Roboto';
+$font-raleway-bold: 'Roboto';
+$font-museo-700: 'Roboto';
+$font-museo-900: 'Roboto';
+$font-roboto: 'Roboto';
+//breakpoints
+$break-mobile-max: 640px;
+$break-tablet-max: 960px;
+$break-smaller-desktop-min: 1024px;
+$break-smaller-desktop-max: 1280px;
+$break-small-desktop-max: 1460px;
+$break-wide-desktop-max: 1600px;
+$gutter-mobile: 20px;
+$gutter-desktop: 40px;
+//wide desktop
+$font-mega-size--wide-desktop: 75px;
+$font-alpha-size--wide-desktop: 80px;
+$font-beta-size--wide-desktop: 55px; //h2
+//desktop
+$font-mega-size--desktop: 65px;
+$font-alpha-size--desktop: 55px; //h1 was 75
+$font-beta-size--desktop: 50px; //h2
+$font-gamma-size--desktop: 30px; //h3
+$font-delta-size--desktop: 30px; //h4
+$font-epsilon-size--desktop: 25px; //h5 was 30
+$font-zeta-eta-size--desktop: 18px; //h6
+$font-regular-size--desktop: 16px;
+$font-centi-milli-size--desktop: 14px;
+//tablet
+$font-mega-size--tablet: 55px;
+$font-alpha-size--tablet: 50px; //h1 was 60
+$font-beta-size--tablet: 40px; //h2
+$font-gamma-size--tablet: 28px; //h3
+$font-delta-size--tablet: 25px; //h4
+$font-epsilon-size--tablet: 22px; //h5
+$font-zeta-eta-size--tablet: 17px; //h6
+$font-regular-size--tablet: 15px;
+$font-centi-milli-size--tablet: 14px;
+//mobile
+$font-mega-size--mobile: 40px;
+$font-alpha-size--mobile: 30px; //h1
+$font-beta-size--mobile: 25px; //h2
+$font-gamma-size--mobile: 25px; //h3
+$font-delta-size--mobile: 20px; //h4
+$font-epsilon-size--mobile: 18px; //h5
+$font-zeta-eta-size--mobile: 16px; //h6
+$font-regular-size--mobile: 15px;
+$font-centi-milli-size--mobile: 13px;
+//forms elements
+$form-element-height-desktop: 60px;
+$form-element-font-desktop: 18px;
+$form-element-rounded-desktop: $form-element-height-desktop / 2;
+$form-element-height-tablet: 50px;
+$form-element-font-tablet: 16px;
+$form-element-rounded-tablet: $form-element-height-tablet / 2;
+$form-element-height-mobile: 40px;
+$form-element-font-mobile: 14px;
+$form-element-rounded-mobile: $form-element-height-mobile / 2;

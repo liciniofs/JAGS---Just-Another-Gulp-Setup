@@ -1,0 +1,171 @@
+$default_rounded_amount: 20px;
+@function pxToEm($px, $base: $font-regular-size--desktop) {
+    @return ($px / $base) * 1em;
+}
+
+@function is-direction($value) {
+    $is-keyword: index((to top, to top right, to right top, to right, to bottom right, to right bottom, to bottom, to bottom left, to left bottom, to left, to left top, to top left), $value);
+    $is-angle: type-of($value)=='number' and index('deg' 'grad' 'turn' 'rad', unit($value));
+    @return $is-keyword or $is-angle;
+}
+
+@function legacy-direction($value) {
+    @if is-direction($value)==false {
+        @error "Cannot convert `#{$value}` to legacy syntax because it doesn't seem to be a direction.";
+    }
+    $conversion-map: ( to top: bottom, to top right: bottom left, to right top: left bottom, to right: left, to bottom right: top left, to right bottom: left top, to bottom: top, to bottom left: top right, to left bottom: right top, to left: right, to left top: right bottom, to top left: bottom right);
+    @if map-has-key($conversion-map, $value) {
+        @return map-get($conversion-map, $value);
+    }
+    @return 90deg - $value;
+}
+
+@mixin linear-gradient($direction, $color-stops...) {
+    // Direction has been omitted and happens to be a color-stop
+    @if is-direction($direction)==false {
+        $color-stops: $direction, $color-stops;
+        $direction: 180deg;
+    }
+    background: nth(nth($color-stops, 1), 1);
+    background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
+    background: linear-gradient($direction, $color-stops);
+}
+
+@mixin transform($transforms) {
+    -webkit-transform: $transforms;
+    -moz-transform: $transforms;
+    -ms-transform: $transforms;
+    transform: $transforms;
+}
+
+@mixin flexbox {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+@mixin word-wrap() {
+    word-break: break-all;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+}
+
+@mixin mobile-max() {
+    @media screen and (max-width: $break-mobile-max) {
+        @content;
+    }
+}
+
+@mixin tablet-max() {
+    @media screen and (max-width: $break-tablet-max) {
+        @content;
+    }
+}
+
+@mixin smaller-desktop-min() {
+    @media screen and (min-width: $break-smaller-desktop-min) {
+        @content;
+    }
+}
+
+@mixin smaller-desktop-max() {
+    @media screen and (min-width: $break-smaller-desktop-max) {
+        @content;
+    }
+}
+
+@mixin small-desktop-max() {
+    @media screen and (max-width: $break-small-desktop-max) {
+        @content;
+    }
+}
+
+@mixin tablet-min() {
+    @media screen and (min-width: $break-mobile-max) {
+        @content;
+    }
+}
+
+@mixin small-desktop-min() {
+    @media screen and (min-width: $break-tablet-max) {
+        @content;
+    }
+}
+
+@mixin wide-desktop-min() {
+    @media screen and (min-width: $break-small-desktop-max) {
+        @content;
+    }
+}
+
+@mixin mega-desktop-min() {
+    @media screen and (min-width: $break-wide-desktop-max) {
+        @content;
+    }
+}
+
+@mixin vertical-centered() {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@mixin opacity($opacity) {
+    opacity: $opacity;
+    $opacity-ie: $opacity * 100;
+    filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+@mixin round-corners($amount: $default_rounded_amount) {
+    border-radius: $amount;
+    -moz-border-radius: $amount;
+    -webkit-border-radius: $amount;
+}
+
+@mixin transition($transition-values...) {
+    -webkit-transition: $transition-values;
+    -moz-transition: $transition-values;
+    -ms-transition: $transition-values;
+    -o-transition: $transition-values;
+    transition: $transition-values;
+}
+
+@mixin scale($scale) {
+    @include transform(scale($scale));
+}
+
+@mixin box-shadow($top, $left, $blur, $color, $inset:"") {
+    -webkit-box-shadow: #{$inset} $top $left $blur $color;
+    -moz-box-shadow: #{$inset} $top $left $blur $color;
+    -ms-box-shadow: #{$inset} $top $left $blur $color;
+    box-shadow: #{$inset} $top $left $blur $color;
+}
+
+@mixin linearGradient($top, $bottom) {
+    background: $top;
+    background: -moz-linear-gradient(top, $top 0%, $bottom 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $top), color-stop(100%, $bottom));
+    background: -webkit-linear-gradient(top, $top 0%, $bottom 100%);
+    background: -o-linear-gradient(top, $top 0%, $bottom 100%);
+    background: -ms-linear-gradient(top, $top 0%, $bottom 100%);
+    background: linear-gradient(to bottom, $top 0%, $bottom 100%);
+    //filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#000000', GradientType=0);
+}
+
+@mixin placeholder {
+    &::-webkit-input-placeholder {
+        @content
+    }
+    &:-moz-placeholder {
+        @content
+    }
+    &::-moz-placeholder {
+        @content
+    }
+    &:-ms-input-placeholder {
+        @content
+    }
+}

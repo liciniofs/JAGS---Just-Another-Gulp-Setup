@@ -1,0 +1,17 @@
+.footer-top {
+    background-color: rgba(17, 17, 17, 0.9);
+    padding: 60px 0;
+
+    a {
+        color: #63A590;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            color: #f7d85d;
+        }
+    }
+    
+    h4 {
+        color: #f7d85d;
+    }
+}

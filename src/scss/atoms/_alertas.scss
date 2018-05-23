@@ -1,0 +1,40 @@
+.title-alertas {
+    margin-bottom: 5px;
+}
+
+.alertas {
+
+    .alerta {
+        background-color: #f7d85d;
+        border-bottom: 1px solid #63A590;
+        min-height: 65px;
+        padding: 15px 15px 5px;
+    }
+
+    h4 {
+        color: #124a4f;
+        font-size: 0.9em;
+        padding-right: 35px;
+        position: relative;
+        transition: all 0.3s ease-in-out;
+        
+        &::after {
+            // background:  no-repeat center center fixed;
+            content: url('../assets/imgs/icons/circle-right.svg');
+            display: block;
+            height: 40px;
+            opacity: .7;
+            position: absolute;
+            right: -5px;
+            top: 0;
+            width: 35px;
+        }
+        &:hover {
+            color: #fff;
+
+            &::after {
+                opacity: 1;
+            }
+        }
+    }
+}

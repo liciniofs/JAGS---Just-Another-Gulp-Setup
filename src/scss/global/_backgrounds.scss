@@ -1,0 +1,80 @@
+.dirty-bg-01 {
+    background: #efefef url('../assets/imgs/icons/cmrg_logo_lines.SVG') no-repeat top left fixed;
+    // background-position: 0 -50%;
+    background-size: 200%; 
+}
+
+.dirty-bg-02 {
+    background: #efefef url('../assets/imgs/icons/cmrg_logo_lines.SVG') no-repeat top center fixed;
+    // background-position: 0 -50%;
+    background-size: 200%; 
+}
+
+.dirty-bg-03 {
+    background: #efefef url('../assets/imgs/icons/cmrg_logo_lines.SVG') no-repeat top right fixed;
+    // background-position: 0 -50%;
+    background-size: 200%; 
+}
+
+.dirty-bg-04 {
+    background: #efefef url('../assets/imgs/icons/cmrg_logo_lines.SVG') no-repeat center left fixed;
+    // background-position: 0 -50%;
+    background-size: 200%; 
+}
+
+.nav-item-bg {
+    display: block;
+    height: 100vh;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.horizontal-bg {
+    background: rgb(15, 52, 65);
+    background: linear-gradient(90deg, rgba(15, 52, 65, 1) 0%, rgba(36, 115, 109, 1) 35%, rgba(42, 137, 128, 1) 100%);
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        color: white;
+    }
+}
+
+.inverted-horizontal-bg {
+    background: rgb(15, 52, 65);
+    background: linear-gradient(-90deg, rgba(15, 52, 65, 1) 0%, rgba(36, 115, 109, 1) 35%, rgba(42, 137, 128, 1) 100%);
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        color: white;
+    }
+}
+
+.diagonal-bg {
+    background: rgb(15, 52, 65);
+    background: linear-gradient(35deg, rgba(15, 52, 65, 1) 0%, rgba(36, 115, 109, 1) 35%, rgba(42, 137, 128, 1) 100%);
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        color: white;
+    }
+}
+
+.inverted-diagonal-bg {
+    background: rgb(15, 52, 65);
+    background: linear-gradient(-35deg, rgba(15, 52, 65, 1) 0%, rgba(36, 115, 109, 1) 35%, rgba(42, 137, 128, 1) 100%);
+    
+    h1,
+    h2,
+    h3,
+    h4 {
+        color: white;
+    }
+}

@@ -1,0 +1,12 @@
+.noticias {
+    padding: 60px 0 60px;
+}
+.news_item_container {
+
+    &:hover {
+
+        h4 {
+            color: $light-green;
+        }
+    }
+}

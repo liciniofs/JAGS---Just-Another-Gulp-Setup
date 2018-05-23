@@ -1,0 +1,33 @@
+a {
+    color: $dark-green;
+    
+    &:hover {
+        color: $light-green;            
+        text-decoration: none;
+    }
+}
+
+.btn-nav,
+.btnsTransparencia {
+    color: $dark-green;
+    font-family: 'Catamaran', sans-serif;
+    transition: all 0.3s ease-in-out;    
+    
+    &:hover {
+        color: $light-green;
+    }
+}
+
+.btn.cmrg-button {
+    background-color: $dark-green;
+    border: none;
+    border-radius: 0;
+    font-family: $main-font;
+    padding-left: 25px;
+    padding-right: 25px;
+    
+    &:hover {
+        background-color: $light-green;
+        border: none;
+    }
+}

@@ -1,0 +1,22 @@
+.transparencia {
+    padding: 60px 0;
+
+    h4 {
+        font-size: 1.2rem;
+    }
+
+    .trans-card {
+        padding-bottom: 30px;
+    }
+}
+
+.news-block {
+    .fix-fit {
+        max-width: 24%;
+        padding-left: 5px;
+        padding-right: 5px;
+        
+        &:last-child {
+        }
+    }
+}
